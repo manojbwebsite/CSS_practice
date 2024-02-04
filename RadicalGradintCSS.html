@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* rasical gradinet in css by default shape is elips. */
+        #grd{
+            background-image: radial-gradient(circle,red 5%,yellow 15%,green 30%);
+            background-image: radial-gradient(closest-side at 20% 60% , red ,yellow ,green);
+            background-image: radial-gradient(farthest-side at 40% 40% , red ,yellow ,green);
+            background-image: repeating-radial-gradient( red ,yellow 30%,green 50%);
+            background-image: repeating-radial-gradient( closest-side at 20% 50% , red ,yellow 30%,green 50%); 
+            /* closest is define as x axis to y axis */
+            height: 500px;
+            width: 500px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="grd">
+
+    </div>
+</body>
+</html>

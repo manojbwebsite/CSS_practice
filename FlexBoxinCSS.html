@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        .contenar {
+            height: 544px;
+            width: 100%;
+            border: 2px solid black;
+            display: flex;
+            /* flex properties for flex contenar  and flex direaction defoult rows*/
+            /* flex-direction: column; 
+            flex-direction: row-reverse;
+            /* revers all item row formate */
+            flex-direction: column-reverse;
+            /* revrs all item in colum formate */
+
+
+            flex-wrap: wrap;
+            /* flex-wrap: wrap-reverse; */
+            /* all itom revers in wrap botom */
+            /* all itoms wrap on size threow to the nex line */
+            flex-flow: row-reverse wrap;
+            /* flex_flow is combintion of flex direction and flex wrap write one way properties */
+            flex-direction: row;
+            justify-content: space-between;
+            justify-content: center;
+            /* All item are the center  */
+           
+            /* fixed space on tow box */
+            justify-content: space-evenly;
+            /*  starting and end space are the same*/
+            justify-content: space-around;
+            /* left or right space of box avilable */
+
+            align-items: center;
+            /* itom vericaly center */
+            align-items: flex-end;
+            /* start two down */
+            align-items: stretch;
+            /* wrap timing vericaly space is same all itom */ 
+            
+
+
+
+
+        }
+
+         .item {
+            width: 200px;
+            height: 200px;
+            background-color: tomato;
+            border: 2px solid rgb(4, 130, 33);
+            margin: 10px;
+            padding: 3px;
+        }
+        #item1{
+            /* flex properties for a flex item */
+            /* order: 19; */
+            /* big order display last box */
+            /* flex-grow: 2; */
+            /* flex grow use for incress size 1item1  */
+             
+        }
+        #item2{
+             /* order: 40; */
+             /* flex-grow: 3; */
+             /* big size for item 1 */
+             /* flex-shrink:3; */
+
+             /* small size of item 2 on scren wrap time:  same to flex grow but small size */
+        }
+        #item3{
+             /* flex-grow: 4; */
+             flex-basis: 320px;
+             /* change the size of item 3 box  */
+             /* flex direction is set to row flex-basis control width */
+              /*flex direction is set to column flex-basis control height */
+              align-self: center;
+              align-self: flex-end;
+              align-self: flex-start;
+              /* item 3 aline center start and end to align self properties  */
+
+
+
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <h1>This is FlexBox tetorial</h1>
+    <div class="contenar">
+        <div class="item" id="item1">frist box</div>
+        <div class="item" id="item2">second box</div>
+        <div class="item" id="item3"> third box</div>
+        <!-- <div class="item" id="item4"> fourth box</div>
+        <div class="item" id="item5"> fifth box</div>
+        <div class="item" id="item6">six box</div> -->
+    </div>
+</body>
+
+</html>

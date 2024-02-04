@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .test{
+         width: 400px;
+         height: 300px;
+         background-color: aqua;   
+         transition:width 3s, height 3s; 
+         border-radius: 50%;
+         transition-timing-function: linear;
+         /* starte to end same timing */
+         transition-timing-function: ease; 
+         /* start fast end slow */
+         transition-timing-function:ease-in;
+         /* start slow end fast */
+         transition-timing-function:ease-out;
+         /* start splicipfc transtion and slow end */
+         transition-timing-function:ease-in-out;
+         /* start and end slow mide time fast */
+        }
+        .test:hover{
+            width: 500px;
+            height: 500px;
+            transition-delay: 3s;
+            /* tansition dealy yous for mouse curser timing to start  */
+            
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="test">
+
+    </div>
+</body>
+</html>

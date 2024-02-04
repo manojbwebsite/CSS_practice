@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            background-color: red;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+        }
+
+         div  p{
+            color: yellow;
+            font-weight: bold;
+            background-color: green;
+            /*is applay for div to direct inside p tag */
+        }
+
+        /* div li p{
+            background-color: aqua;
+            color: red;
+             indide p in div apply 
+        } */
+        div > p {
+            background-color: black;
+            color: white;
+            /* ditect apply for div child tag div inside direct only p tag */
+        }
+
+        div +p{
+            background-color: rgb(187, 30, 30);
+            color: rgb(0, 119, 255);
+
+            /* is applay for last tag use only div his applay  is div */
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        This is more an selector
+    </h1>
+    <div class="contenar">
+        <div class="row">
+            <ul>
+                <li class="item">
+                    <p> this another paragraph inside li</p>
+                    <p> this is paragarph </p>
+                </li>
+            </ul>
+            <p>this is a paragraph > </p>
+        </div>
+        <p>This is the another paragraph</p>
+    </div>
+    <p> this is outer para</p>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header::before{
+            background: url(office01.png) no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.5;
+        }
+        header {
+            display: flex;
+            flex-direction: column;
+        }
+
+        body {
+            background-color: black;
+            color: rgb(237, 5, 5);
+            margin: 0;
+            padding: 0;
+            background: url(office01.png) no-repeat center center/cover;
+        }
+
+        .navigation {
+
+            font-size: 20px;
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        li {
+            list-style: none;
+            padding: 20px 23px;
+        }
+
+        section {
+            height: 344px;
+            /* border: solid red; */
+            margin: 3px 230px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        h1{
+            font-size: 4rem;
+        }
+        p{
+            text-align: center;
+        }
+
+        section::before {
+            content: "this is a content";
+            /* This Befor selector add content befor section use this method */
+        }
+        section::after {
+            content: "this is a content";
+            /* This after selector add content after section this method */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item1">home</li>
+                <li class="item2">about</li>
+                <li class="item3">contact</li>
+                <li class="item4"> services</li>
+            </ul>
+        </nav>
+    </header>
+        <section>
+            <h1>Welecome to cooding</h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, tenetur doloremque voluptatum alias, facilis
+            cumque delectus cum ipsam id sit minima sequi incidunt assumenda ducimus? Et ipsam nesciunt pariatur
+            consequuntur?
+        </section>
+        <hr>
+    
+</body>
+
+</html>

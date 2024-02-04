@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>custom variable</title>
+    <Style>
+        :root{
+            --primary-color:blue;
+            --denger-color:red;
+            --bg-color: aqua;
+            --maxw:333px;
+            /* this vairable use for all page of css */
+        }
+        .box{
+            --box-color: rgb(130, 238, 152);
+            /* This is create varible in css this variable only use for box class not use onother class 
+             */
+            background-color:var(--denger-color);
+            width: 200px;
+            height: 200px;
+            border: 2px solid var(--primary-color);
+            margin: 2px 9px;
+            box-shadow: 3px 3px 50px var(--box-color);
+            
+           
+            
+        }
+        .contener{ 
+            display: flex;
+            background-color: var(--bg-color);
+            align-items: center;
+            justify-content: center;
+            background-color: var(--denger-color);
+            margin: auto;
+            width: var(--maxw);
+            
+
+        }
+
+    </Style>
+</head>
+<body>
+    <div class="contener">
+ <div class="box"></div>
+ <div class="box"></div>
+ <div class="box"></div>
+</div>
+</body>
+</html>

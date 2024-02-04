@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* scale properites use fo x and y axis size gain to hover  to its given class */
+        /* skew properties to use roted x axis and y axis in degree formate */
+        .test{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin: 100px;
+            transition: 4s;
+        }
+        .test:hover{
+            transform: scale(2,2);
+            transform: scaleX(2);
+            transform: scaley(2);
+            transform: skew(50deg);
+            /* transform: skewX(60deg); */
+            /* transform: skewy(70deg); */
+        }
+    </style>
+</head>
+<body>
+    <div class="test"></div>
+</body>
+</html>
